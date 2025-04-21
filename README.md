@@ -10,18 +10,18 @@ This project aims to define an innovative methodology to Hyperspectral imaging c
 This directory is divided into three main folders:
 
 1. The first `1.Simulation RGB-CMY dataset` contains the code structure necessary to run the following MATLAB scripts:
+    - `color_curves_visualisation.m`: Displays the curves from the CSV file `SensCurves_WRGBCMY.txt`, which represent the intensity curves of each color as a function of wavelength (ranging from 300 to 900 nm across 3000 samples).
 
-- color_curves_visualisation.m: Displays the curves from the CSV file `SensCurves_WRGBCMY.txt`, which represent the intensity curves of each color as a function of wavelength (ranging from 300 to 900 nm across 3000 samples).
+    - ` RGB_CMY_simulation.m`: Contains MATLAB code for visualizing different preprocessing steps applied to the input hyperspectral image. 
+    ⚠️ Note: This script includes a variable `demo_mode`.
+    If set to true, it processes a single pixel and displays the steps through plots.
+    If set to false, it applies the processing to all pixels and generates a CSV output file containing the computed responses for R, G, B, C, M, and Y channels.
 
-- RGB_CMY_simulation.m: Contains MATLAB code for visualizing different preprocessing steps applied to the input hyperspectral image. 
-⚠️ Note: This script includes a variable `demo_mode`.
-If set to true, it processes a single pixel and displays the steps through plots.
-If set to false, it applies the processing to all pixels and generates a CSV output file containing the computed responses for R, G, B, C, M, and Y channels.
+    - `HyperspectralApp.mlapp`: A MATLAB app for visualizing the hyperspectral image (hypercube).
+    
+2. The second `2.Neural Network` contains code structure necessary to run the neural network code in MATLAB
 
-- HyperspectralApp.mlapp: A MATLAB app for visualizing the hyperspectral image (hypercube).
-
-
-3. The third `files` contains all resources related to the code, including input and output files, supplementary materials, and other supporting data.
+3. The third `files` contains all resources related to the code, including input and output files, supplementary materials like screenshot, and other supporting data.
 
 ## Abstract
 VISUAL RANGE HYPER SPECTRUM ESTIMATION ON THE BASE OF RGB
@@ -86,5 +86,8 @@ Available at: https://doi.org/10.1109/83.902295
 
 ## Authors
 
-- [@Maxime-VE](https://github.com/Maxime-VE)
+- [Maxime VETTORATO - @Maxime-VE](https://github.com/Maxime-VE)
+- [Nathan ROGER - @H1drAHub](https://github.com/H1drAHub)
+- [Philippe LEMOINE - @PhilZeMonk](https://github.com/PhilZeMonk)
+- [Sofiane KETTOU - @SofianeKETTOU](https://github.com/SofianeKETTOU)
 
