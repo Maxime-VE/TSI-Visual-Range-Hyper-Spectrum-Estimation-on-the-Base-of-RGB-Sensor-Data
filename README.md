@@ -6,10 +6,10 @@ This project aims to define an innovative methodology to Hyperspectral imaging c
 
 ---
 
-## Repository Organazation
+## 🗂️ Repository Organazation
 This directory is divided into three main folders:
 
-1. The first `1.Simulation RGB-CMY dataset` contains the code structure necessary to run the following MATLAB scripts:
+1. The first `1.Simulation RGB-CMY dataset` folder contains the code structure necessary to run the following MATLAB scripts:
     - `color_curves_visualisation.m`: Displays the curves from the CSV file `SensCurves_WRGBCMY.txt`, which represent the intensity curves of each color as a function of wavelength (ranging from 300 to 900 nm across 3000 samples).
 
     - ` RGB_CMY_simulation.m`: Contains MATLAB code for visualizing different preprocessing steps applied to the input hyperspectral image. 
@@ -17,13 +17,48 @@ This directory is divided into three main folders:
     If set to true, it processes a single pixel and displays the steps through plots.
     If set to false, it applies the processing to all pixels and generates a CSV output file containing the computed responses for R, G, B, C, M, and Y channels.
 
-    - `HyperspectralApp.mlapp`: A MATLAB app for visualizing the hyperspectral image (hypercube).
+    - `HyperspectralApp.mlapp`: A MATLAB app for visualizing the hyperspectral image (hypercube). 
+    This file requires to install some libraries :
+        - `Image Processing Toolbox`
+        - `Hyperspectral Image Processing`
+    Installation process of add-on tutorial is available at : [Link here https://www.mathworks.com/help/matlab/matlab_env/get-add-ons.html](https://www.mathworks.com/help/matlab/matlab_env/get-add-ons.html)
     
 2. The second `2.Neural Network` contains code structure necessary to run the neural network code in MATLAB
 
 3. The third `files` contains all resources related to the code, including input and output files, supplementary materials like screenshot, and other supporting data.
 
-## Abstract
+---
+
+## 🔧 How to get the content of this project on your machine
+
+This guide shows you how to easily download this project from GitHub.
+
+
+#### Prerequisites
+
+- A web browser (Chrome, Firefox, etc.)
+- Internet access
+
+#### Method 1: Download as a ZIP File
+
+1. Go to the **Home page of the project**.
+2. Click the green **"Code"** button.
+3. In the dropdown menu, click **"Download ZIP"**.
+4. The ZIP file will be downloaded to your computer.
+5. **Unzip** the file to access the project contents.
+
+
+#### Method 2 (Optional): Clone the Repository with Git
+
+If you have Git installed on your machine (through command line terminal or a GitBash terminal) , you can clone the repository using:
+
+```bash
+git clone https://github.com/Maxime-VE/TSI-Visual-Range-Hyper-Spectrum-Estimation-on-the-Base-of-RGB-Sensor-Data
+```
+This command will download unzipped version of the repository at the current path you run the command
+
+---
+## 🧾 Abstract
 VISUAL RANGE HYPER SPECTRUM ESTIMATION ON THE BASE OF RGB
 SENSOR DATA
 
@@ -84,7 +119,9 @@ https://doi.org/10.1109/JSTARS.2022.3231380
 responses from hyperspectral images. IEEE Transactions on Image Processing, 10(2), 307-316.
 Available at: https://doi.org/10.1109/83.902295
 
-## Authors
+---
+
+## 🔗 Authors
 
 - [Maxime VETTORATO - @Maxime-VE](https://github.com/Maxime-VE)
 - [Nathan ROGER - @H1drAHub](https://github.com/H1drAHub)
